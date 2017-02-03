@@ -9,12 +9,12 @@ https://cran.rstudio.com
 
 Second, install following R packages:
 
-install.packages("shiny")
-install.packages("MASS")
-install.packages("e1071")
-install.packages("randomForest")
-install.packages("XLConnect")
-install.packages("pROC")
+install.packages("shiny")\\
+install.packages("MASS")\\
+install.packages("e1071")\\
+install.packages("randomForest")\\
+install.packages("XLConnect")\\
+install.packages("pROC")\\
 install.packages("ROCR")
 install.packages("RWeka")
 install.packages("FSelector")
