@@ -972,7 +972,7 @@ miss.datei<-reactive({
 			 roc.curve<-plotRoc.curves(xdata[,c(attrs.no,ncol(xdata))],add.legend=add.legend,include.auc=include.auc,ispercent=is.percent)
 		 })
 		 print(roc.curve)
-		 dev.off()
+		 #dev.off()
 
 	},height=700,width=700)
 
@@ -1778,7 +1778,7 @@ miss.datei<-reactive({
 	        y<-1/factorial(length(var_label()))
 	        abline(h=y,col="red",lwd=2)
 	        text(1,y,paste("Threshold=",sprintf("%.3f",y),sep=""),col="red",adj = c(0, -.2))
-	        dev.off()
+	        #dev.off()
 	      }
 	      else
 	      {
@@ -1797,7 +1797,7 @@ miss.datei<-reactive({
 	      y<-1/factorial(var_amount())
 	      abline(h=y,col="red",lwd=2)
 	      text(1,y,paste("Grenz=",sprintf("%.3f",y),sep=""),col="red",adj = c(0, -.2))
-	      dev.off()
+	      #dev.off()
 	    }
 	  })
 	})
@@ -2708,7 +2708,7 @@ miss.datei<-reactive({
 	    plotClass.result(out$true.classified, cross.method, class.method, flag.feature, feat.num)
 	  })
 	  print(box)
-	  dev.off()
+	  #dev.off()
 	},height=700,width=700)
 
 
