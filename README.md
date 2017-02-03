@@ -5,29 +5,28 @@ The Biocomb repository includes a Biocomb web application, containing a user-int
 # Installation
 First, download and install R:
 
-https://cran.rstudio.com
+    https://cran.rstudio.com
 
 Second, install following R packages:
 
-install.packages("shiny")
-install.packages("MASS")
-install.packages("e1071")
-install.packages("randomForest")
-install.packages("XLConnect")
-install.packages("pROC")
-install.packages("ROCR")
-install.packages("RWeka")
-install.packages("FSelector")
-install.packages("arules")
-install.packages("pamr")
-install.packages("class")
-install.packages("nnet")
-install.packages("rpart")
+    install.packages("shiny")
+    install.packages("MASS")
+    install.packages("e1071")
+    install.packages("randomForest")
+    install.packages("XLConnect")
+    install.packages("pROC")
+    install.packages("ROCR")
+    install.packages("RWeka")
+    install.packages("FSelector")
+    install.packages("arules")
+    install.packages("pamr")
+    install.packages("class")
+    install.packages("nnet")
+    install.packages("rpart")
 
 Finally, run following code in R console:
 
-shiny::runGitHub("Biocomb", "novosel65")
-
+    shiny::runGitHub("Biocomb", "novosel65")
 
 # License
 
