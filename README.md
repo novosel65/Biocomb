@@ -6,6 +6,7 @@ The Biocomb repository includes a Biocomb web application, containing a user-int
 First, download and install R:
 
 https://cran.rstudio.com
+
 Second, install following R packages:
 
 install.packages("shiny")
