@@ -258,7 +258,6 @@ List fun3_chi(List chi_s,List int_l,DataFrame datain, double chi_value, NumericM
 {
   int d1;
   int dm;
-  //int indexS;
   int ik;
   int il;
 
@@ -768,7 +767,7 @@ DataFrame fun4_chi(List chi_s,List int_l,DataFrame datain,DataFrame vrem_nominal
             sig_attr[irow]=sig_attr[irow]-step;
 
 
-            chi_attr[irow]=R::qchisq(1-sig_attr[irow], df=df,1,0);
+            chi_attr[irow]=R::qchisq(1-sig_attr[irow], df,0,1);
           }
           else
           {
