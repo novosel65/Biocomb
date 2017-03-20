@@ -2,6 +2,7 @@ compute.confusion.matrix <- function(true.classes,predicted.classes){
   return(table(predicted.classes,true.classes))
 }
 
+
 wrongly.classified <- function(dattable,predicted.classes){
     return(dattable[,ncol(dattable)]==predicted.classes)
 }
@@ -258,7 +259,7 @@ for (j in 1:length(classifiers)){
 }
 
 
-classifier.loop <- function(dattable,classifiers=c("svm","lda","rf","nsc"),feature.selection=c("aucs","InformationGain"),disc.method="MDL",threshold=0.3,
+classifier.loop <- function(dattable,classifiers=c("svm","lda","rf","nsc"),feature.selection=c("auc","InformationGain"),disc.method="MDL",threshold=0.3,
                   threshold.consis=0,attrs.nominal=numeric(),no.feat=20,flag.feature=TRUE,method.cross=c("leaveOneOut","sub-sampling","fold-crossval"))
 {
   dattable[,ncol(dattable)]=as.factor(dattable[,ncol(dattable)])
