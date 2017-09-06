@@ -9,6 +9,9 @@ First, download and install R:
 
 Second, install following R packages:
 
+    install.packages("devtools")
+    require(devtools)
+    
     install.packages("shiny")
     install.packages("MASS")
     install.packages("e1071")
